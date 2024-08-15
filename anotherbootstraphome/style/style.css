@@ -1,0 +1,87 @@
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+}
+
+#dog-img {
+  border-radius: 50%;
+}
+
+.c-logos img {
+  object-fit: contain;
+  width: 25%;
+}
+
+@media (max-width: 831px) {
+  #title-section header {
+    flex-direction: column;
+  }
+
+  #hero-section .gradient-background {
+    flex-direction: column-reverse;
+  }
+
+  #hero-section h1 {
+    text-align: center;
+    margin: 2rem;
+  }
+
+  .btn-container .btn {
+    flex-shrink: 0;
+  }
+
+  #feature-section .col {
+    margin: 0 auto 0 12rem;  
+  }
+
+  .c-logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 785px) {
+  .hero-section .btn {
+    
+  }
+
+  #hero-section h1 {
+    
+  }
+
+  #feature-section .col {
+    margin: 0 auto 0 12rem;  
+  }
+}
+
+@media (max-width: 650px) {
+  #hero-section .col-4  {
+    
+  }
+
+  #feature-section .col {
+    margin: 0 auto 0 8rem;  
+  }
+
+  
+}
